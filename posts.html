@@ -11,12 +11,12 @@
 
         .menu ul li {
             display: inline-block;
-            color: #8b8b8b;
+            color: #5f5f5f;
             margin-left: 15px;
         }
 
         .menu ul li a {
-            color: #8b8b8b;
+            color: #5f5f5f;
             text-decoration: none;
             font-size: 20px;
             text-transform: uppercase;
@@ -66,7 +66,7 @@
 
             var data = new Date();
 
-            dt.innerHTML = data.getDate().toString() + "/" + data.getMonth().toString() + "/" + data.getFullYear().toString();
+            dt.innerHTML = data.getDate().toString() + "/" + Number(data.getMonth()+1).toString() + "/" + data.getFullYear().toString();
             novadiv.appendChild(nome);
             novadiv.appendChild(assunto);
             novadiv.appendChild(dt);
